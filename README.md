@@ -2,8 +2,10 @@ soil_moist_forecast
 ==============================
 
 This is an end to end ds project for forecasting the soil moisture by reading iot data from sensors.
+The structure of the project is based on the "cookiecutter" which is one of the based project structure for
+data science projects.
 
-Project Organization
+General Project Organization
 ------------
 
     ├── LICENSE
@@ -54,4 +56,9 @@ Project Organization
 
 --------
 
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
+The main notebooks are located in the 'notebook' directory. There are two Jupyter notebooks named 'soil_moist_forecast_draft' and 'soil_moist_forecast_final'. From a computational standpoint, both notebooks perform the same computations. The 'draft' version is the primary development notebook and does not have a concrete structure. However, in the final version, the code is organized as functions in the 'src' directory. I've kept the draft version in case your IDE encounters issues with the Python PATH, allowing you to run the code in the draft version.
+
+The project involves conducting Exploratory Data Analysis (EDA) on soil moisture data from various locations in Europe. In the second part, an LSTM model is created to forecast the soil moisture for the next day by considering the measurements from the last 10 days.
+
+TODOs:
+The model can be deployed by FastAPI and after becomes dockerized can be used by an API call and predict the moisture for new incoming samples.

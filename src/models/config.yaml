@@ -1,0 +1,6 @@
+Training:
+  batch_size: 128
+  hidden_size: 50
+  output_size: 1
+  num_epochs: 10
+  lr: 0.001
