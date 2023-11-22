@@ -62,3 +62,4 @@ The project involves conducting Exploratory Data Analysis (EDA) on soil moisture
 
 TODOs:
 The model can be deployed by FastAPI and after becomes dockerized can be used by an API call and predict the moisture for new incoming samples.
+ p.s: I have used poetry for the python package handling and virtual environment creation.
